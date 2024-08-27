@@ -69,7 +69,7 @@ func main(){
 		port = "5000"
 	}
 
-	if os.Getenv("Env") == "production" {
+	if os.Getenv("ENV") == "production" {
 		app.Static("/","./client/dist")
 	}
 
